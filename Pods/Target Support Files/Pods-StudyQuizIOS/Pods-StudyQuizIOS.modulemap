@@ -1,0 +1,6 @@
+framework module Pods_StudyQuizIOS {
+  umbrella header "Pods-StudyQuizIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

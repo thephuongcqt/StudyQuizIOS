@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6F2C65AC81BA93F82AE2A5 /* Pods_StudyQuizIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */; };
 		BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */; };
 		BF4EB3C31FDE914E009D9726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C21FDE914E009D9726 /* ViewController.swift */; };
 		BF4EB3C61FDE914E009D9726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4EB3C41FDE914E009D9726 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		337614DB5443C9FA152081F5 /* Pods-StudyQuizIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF4EB3BD1FDE914E009D9726 /* StudyQuizIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyQuizIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4EB3C21FDE914E009D9726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		BF4EB3CA1FDE914E009D9726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4EB3CD1FDE914E009D9726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF4EB3CF1FDE914E009D9726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.release.xcconfig"; sourceTree = "<group>"; };
+		EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyQuizIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6F2C65AC81BA93F82AE2A5 /* Pods_StudyQuizIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6D3F762FF9A3EB79B705D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF4EB3B41FDE914E009D9726 = {
 			isa = PBXGroup;
 			children = (
 				BF4EB3BF1FDE914E009D9726 /* StudyQuizIOS */,
 				BF4EB3BE1FDE914E009D9726 /* Products */,
+				F1CF265455D21F747AC1AC44 /* Pods */,
+				8F6D3F762FF9A3EB79B705D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = StudyQuizIOS;
 			sourceTree = "<group>";
 		};
+		F1CF265455D21F747AC1AC44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				337614DB5443C9FA152081F5 /* Pods-StudyQuizIOS.debug.xcconfig */,
+				E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF4EB3D21FDE914E009D9726 /* Build configuration list for PBXNativeTarget "StudyQuizIOS" */;
 			buildPhases = (
+				E93361540FD3A8DC29234C1D /* [CP] Check Pods Manifest.lock */,
 				BF4EB3B91FDE914E009D9726 /* Sources */,
 				BF4EB3BA1FDE914E009D9726 /* Frameworks */,
 				BF4EB3BB1FDE914E009D9726 /* Resources */,
+				BCFC3CF8029A98B94A70E4DC /* [CP] Embed Pods Frameworks */,
+				6712E68B2102064B5546B85C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6712E68B2102064B5546B85C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCFC3CF8029A98B94A70E4DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93361540FD3A8DC29234C1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyQuizIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF4EB3B91FDE914E009D9726 /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		BF4EB3D31FDE914E009D9726 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337614DB5443C9FA152081F5 /* Pods-StudyQuizIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +373,7 @@
 		};
 		BF4EB3D41FDE914E009D9726 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
