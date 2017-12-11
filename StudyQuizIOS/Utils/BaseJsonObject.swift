@@ -13,7 +13,7 @@ import UIKit
 
  Ensure your property name and key of dictionary are the same
 
- From swift 4: you must to insert some anotation:
+ From swift 1 - 3: you must to insert some anotation:
     - @objcMembers before your class
     - @objc before your class property
  */
