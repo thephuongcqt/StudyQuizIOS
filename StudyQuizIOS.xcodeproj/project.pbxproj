@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		AB6F2C65AC81BA93F82AE2A5 /* Pods_StudyQuizIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */; };
 		BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */; };
-		BF4EB3C31FDE914E009D9726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C21FDE914E009D9726 /* ViewController.swift */; };
-		BF4EB3C61FDE914E009D9726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4EB3C41FDE914E009D9726 /* Main.storyboard */; };
+		BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C21FDE914E009D9726 /* LoginController.swift */; };
 		BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C71FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld */; };
 		BF4EB3CB1FDE914E009D9726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4EB3CA1FDE914E009D9726 /* Assets.xcassets */; };
-		BF4EB3CE1FDE914E009D9726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4EB3CC1FDE914E009D9726 /* LaunchScreen.storyboard */; };
+		BF4EB3DA1FDE9344009D9726 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3D91FDE9344009D9726 /* BaseService.swift */; };
+		BF4EB3E21FDE9371009D9726 /* BaseJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DC1FDE9371009D9726 /* BaseJsonObject.swift */; };
+		BF4EB3E31FDE9371009D9726 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DD1FDE9371009D9726 /* Extensions+String.swift */; };
+		BF4EB3E41FDE9371009D9726 /* Extensions+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DE1FDE9371009D9726 /* Extensions+UIImageView.swift */; };
+		BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */; };
+		BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */; };
+		BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E11FDE9371009D9726 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		337614DB5443C9FA152081F5 /* Pods-StudyQuizIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF4EB3BD1FDE914E009D9726 /* StudyQuizIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyQuizIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF4EB3C21FDE914E009D9726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF4EB3C51FDE914E009D9726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF4EB3C21FDE914E009D9726 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		BF4EB3C81FDE914E009D9726 /* StudyQuizIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudyQuizIOS.xcdatamodel; sourceTree = "<group>"; };
 		BF4EB3CA1FDE914E009D9726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BF4EB3CD1FDE914E009D9726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF4EB3CF1FDE914E009D9726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4EB3D91FDE9344009D9726 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BF4EB3DC1FDE9371009D9726 /* BaseJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseJsonObject.swift; sourceTree = "<group>"; };
+		BF4EB3DD1FDE9371009D9726 /* Extensions+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
+		BF4EB3DE1FDE9371009D9726 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
+		BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		BF4EB3E11FDE9371009D9726 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyQuizIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,15 +81,60 @@
 		BF4EB3BF1FDE914E009D9726 /* StudyQuizIOS */ = {
 			isa = PBXGroup;
 			children = (
-				BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */,
-				BF4EB3C21FDE914E009D9726 /* ViewController.swift */,
-				BF4EB3C41FDE914E009D9726 /* Main.storyboard */,
-				BF4EB3CA1FDE914E009D9726 /* Assets.xcassets */,
-				BF4EB3CC1FDE914E009D9726 /* LaunchScreen.storyboard */,
 				BF4EB3CF1FDE914E009D9726 /* Info.plist */,
+				BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */,
+				BF4EB3CA1FDE914E009D9726 /* Assets.xcassets */,
+				BF4EB3D71FDE92CD009D9726 /* Controller */,
+				BF4EB3D51FDE92B2009D9726 /* Model */,
+				BF4EB3D81FDE9307009D9726 /* Service */,
 				BF4EB3C71FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld */,
+				BF4EB3DB1FDE9371009D9726 /* Utils */,
+				BF4EB3D61FDE92BE009D9726 /* View */,
 			);
 			path = StudyQuizIOS;
+			sourceTree = "<group>";
+		};
+		BF4EB3D51FDE92B2009D9726 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF4EB3D61FDE92BE009D9726 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF4EB3D71FDE92CD009D9726 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF4EB3C21FDE914E009D9726 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF4EB3D81FDE9307009D9726 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF4EB3D91FDE9344009D9726 /* BaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF4EB3DB1FDE9371009D9726 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF4EB3DC1FDE9371009D9726 /* BaseJsonObject.swift */,
+				BF4EB3DD1FDE9371009D9726 /* Extensions+String.swift */,
+				BF4EB3DE1FDE9371009D9726 /* Extensions+UIImageView.swift */,
+				BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */,
+				BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */,
+				BF4EB3E11FDE9371009D9726 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1CF265455D21F747AC1AC44 /* Pods */ = {
@@ -153,9 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4EB3CE1FDE914E009D9726 /* LaunchScreen.storyboard in Resources */,
 				BF4EB3CB1FDE914E009D9726 /* Assets.xcassets in Resources */,
-				BF4EB3C61FDE914E009D9726 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,32 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4EB3C31FDE914E009D9726 /* ViewController.swift in Sources */,
+				BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */,
+				BF4EB3DA1FDE9344009D9726 /* BaseService.swift in Sources */,
+				BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */,
+				BF4EB3E41FDE9371009D9726 /* Extensions+UIImageView.swift in Sources */,
+				BF4EB3E31FDE9371009D9726 /* Extensions+String.swift in Sources */,
+				BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */,
 				BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */,
+				BF4EB3E21FDE9371009D9726 /* BaseJsonObject.swift in Sources */,
+				BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */,
 				BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BF4EB3C41FDE914E009D9726 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF4EB3C51FDE914E009D9726 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BF4EB3CC1FDE914E009D9726 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF4EB3CD1FDE914E009D9726 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BF4EB3D01FDE914E009D9726 /* Debug */ = {
@@ -363,6 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQT9G6B78G;
 				INFOPLIST_FILE = StudyQuizIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuongnt.StudyQuizIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQT9G6B78G;
 				INFOPLIST_FILE = StudyQuizIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuongnt.StudyQuizIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

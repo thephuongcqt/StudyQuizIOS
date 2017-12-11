@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = true
+        
+        setupViews()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setupViews(){
+        
     }
-
-
+    
 }
 
