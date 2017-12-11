@@ -12,6 +12,7 @@
 		BF0881571FDECCBE009B5054 /* SQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881561FDECCBE009B5054 /* SQButton.swift */; };
 		BF08815A1FDED557009B5054 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881591FDED557009B5054 /* AppConst.swift */; };
 		BF08815C1FDED5F9009B5054 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08815B1FDED5F9009B5054 /* BaseResponse.swift */; };
+		BF08815E1FDEDF39009B5054 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08815D1FDEDF39009B5054 /* LoginService.swift */; };
 		BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */; };
 		BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C21FDE914E009D9726 /* LoginController.swift */; };
 		BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C71FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 		BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */; };
 		BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */; };
 		BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E11FDE9371009D9726 /* Extensions.swift */; };
+		BFB511701FDEED6C00ED93E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5116F1FDEED6C00ED93E0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		BF0881561FDECCBE009B5054 /* SQButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQButton.swift; sourceTree = "<group>"; };
 		BF0881591FDED557009B5054 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		BF08815B1FDED5F9009B5054 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		BF08815D1FDEDF39009B5054 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		BF4EB3BD1FDE914E009D9726 /* StudyQuizIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyQuizIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4EB3C21FDE914E009D9726 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		BF4EB3E11FDE9371009D9726 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BFB5116F1FDEED6C00ED93E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyQuizIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BF08815B1FDED5F9009B5054 /* BaseResponse.swift */,
+				BFB5116F1FDEED6C00ED93E0 /* User.swift */,
 			);
 			path = ApiModel;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				BF4EB3D91FDE9344009D9726 /* BaseService.swift */,
+				BF08815D1FDEDF39009B5054 /* LoginService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -305,9 +311,11 @@
 				BF0881571FDECCBE009B5054 /* SQButton.swift in Sources */,
 				BF4EB3DA1FDE9344009D9726 /* BaseService.swift in Sources */,
 				BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */,
+				BFB511701FDEED6C00ED93E0 /* User.swift in Sources */,
 				BF0881541FDEC483009B5054 /* SQTextField.swift in Sources */,
 				BF4EB3E41FDE9371009D9726 /* Extensions+UIImageView.swift in Sources */,
 				BF4EB3E31FDE9371009D9726 /* Extensions+String.swift in Sources */,
+				BF08815E1FDEDF39009B5054 /* LoginService.swift in Sources */,
 				BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */,
 				BF08815A1FDED557009B5054 /* AppConst.swift in Sources */,
 				BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */,

@@ -102,7 +102,8 @@ class LoginController: UIViewController {
     
     @objc func handleLogin(){
         if let username = usernameTextField.text, let password = passwordTextField.text, username.isEmpty == false, password.isEmpty == false{
-            
+            let service = LoginService.shared
+            service.login(username: username, password: password)
         }
         
     }

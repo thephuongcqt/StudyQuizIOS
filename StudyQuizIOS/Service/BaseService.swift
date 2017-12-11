@@ -12,6 +12,9 @@ import Alamofire
 
 class BaseService{
     static let shared = BaseService()
+    private init(){
+        
+    }
     
     func requestJSON(with url: URL, completion: @escaping (_ dictionary: [String: Any]?, _ success: Bool, _ error: Error?) -> ()){
         Alamofire.request(url).responseJSON { (response) in
@@ -46,5 +49,32 @@ class BaseService{
             }
             completion(nil, false, nil)
         }
+    }
+    
+    func requestJSON<T: Decodable>(with url: URL, method: HTTPMethod, parameters: [String: Any], completion: @escaping (_ result: T?, _ error: Error?) -> ()){
+        Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: [:]).responseJSON { (response) in
+            switch response.result{
+            case .success(_):
+                print("success")
+                if let data = response.data {
+                    do{
+                        let result = try JSONDecoder().decode(T.self, from: data)                        
+                        completion(result, nil)
+                        return
+                    }
+                    catch _ {
+                        // handle
+                    }
+                }
+                completion(nil, nil)
+            case .failure(let error):
+                print("fail")
+                completion(nil, error)
+            }
+        }
+    }
+    
+    func requestJSON<T: Decodable>(with url: URL, method: HTTPMethod, parameters: [String: Any], dm: T?){
+        
     }
 }
