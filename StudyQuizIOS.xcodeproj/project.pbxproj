@@ -14,6 +14,12 @@
 		BF08815A1FDED557009B5054 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881591FDED557009B5054 /* AppConst.swift */; };
 		BF08815C1FDED5F9009B5054 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08815B1FDED5F9009B5054 /* BaseResponse.swift */; };
 		BF08815E1FDEDF39009B5054 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08815D1FDEDF39009B5054 /* LoginService.swift */; };
+		BF1313A61FE933FD00D335F1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313A51FE933FD00D335F1 /* HomeController.swift */; };
+		BF1313A81FE9368800D335F1 /* LatestActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313A71FE9368800D335F1 /* LatestActivityController.swift */; };
+		BF1313AA1FE936A100D335F1 /* ClassesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313A91FE936A100D335F1 /* ClassesController.swift */; };
+		BF1313AC1FE936B000D335F1 /* FoldersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313AB1FE936B000D335F1 /* FoldersController.swift */; };
+		BF1313AE1FE936BE00D335F1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313AD1FE936BE00D335F1 /* ProfileController.swift */; };
+		BF1313B01FE936C800D335F1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1313AF1FE936C800D335F1 /* SettingsController.swift */; };
 		BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */; };
 		BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C21FDE914E009D9726 /* LoginController.swift */; };
 		BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3C71FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld */; };
@@ -39,6 +45,12 @@
 		BF0881591FDED557009B5054 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		BF08815B1FDED5F9009B5054 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		BF08815D1FDEDF39009B5054 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		BF1313A51FE933FD00D335F1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		BF1313A71FE9368800D335F1 /* LatestActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestActivityController.swift; sourceTree = "<group>"; };
+		BF1313A91FE936A100D335F1 /* ClassesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesController.swift; sourceTree = "<group>"; };
+		BF1313AB1FE936B000D335F1 /* FoldersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersController.swift; sourceTree = "<group>"; };
+		BF1313AD1FE936BE00D335F1 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		BF1313AF1FE936C800D335F1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		BF4EB3BD1FDE914E009D9726 /* StudyQuizIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyQuizIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4EB3C01FDE914E009D9726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF4EB3C21FDE914E009D9726 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -156,6 +168,12 @@
 			isa = PBXGroup;
 			children = (
 				BF4EB3C21FDE914E009D9726 /* LoginController.swift */,
+				BF1313A51FE933FD00D335F1 /* HomeController.swift */,
+				BF1313A71FE9368800D335F1 /* LatestActivityController.swift */,
+				BF1313A91FE936A100D335F1 /* ClassesController.swift */,
+				BF1313AB1FE936B000D335F1 /* FoldersController.swift */,
+				BF1313AD1FE936BE00D335F1 /* ProfileController.swift */,
+				BF1313AF1FE936C800D335F1 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -326,25 +344,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1313A81FE9368800D335F1 /* LatestActivityController.swift in Sources */,
 				BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */,
 				BFE3AF421FE8E36B00ADAE05 /* BaseDateTransform.swift in Sources */,
 				BF0881571FDECCBE009B5054 /* SQButton.swift in Sources */,
 				BF4EB3DA1FDE9344009D9726 /* BaseService.swift in Sources */,
+				BF1313A61FE933FD00D335F1 /* HomeController.swift in Sources */,
 				BFE3AF441FE8EBC100ADAE05 /* ResultType.swift in Sources */,
 				BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */,
 				BFB511701FDEED6C00ED93E0 /* User.swift in Sources */,
 				BF0881541FDEC483009B5054 /* SQTextField.swift in Sources */,
+				BF1313B01FE936C800D335F1 /* SettingsController.swift in Sources */,
 				BF4EB3E41FDE9371009D9726 /* Extensions+UIImageView.swift in Sources */,
 				BF4EB3E31FDE9371009D9726 /* Extensions+String.swift in Sources */,
 				BF08815E1FDEDF39009B5054 /* LoginService.swift in Sources */,
 				BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */,
+				BF1313AC1FE936B000D335F1 /* FoldersController.swift in Sources */,
 				BF08815A1FDED557009B5054 /* AppConst.swift in Sources */,
 				BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */,
 				BF8CE41A1FE9011F001D1B39 /* Extensions+MBProgressHUD.swift in Sources */,
 				BF4EB3E21FDE9371009D9726 /* BaseJsonObject.swift in Sources */,
+				BF1313AA1FE936A100D335F1 /* ClassesController.swift in Sources */,
 				BF08815C1FDED5F9009B5054 /* BaseResponse.swift in Sources */,
 				BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */,
 				BF4EB3C11FDE914E009D9726 /* AppDelegate.swift in Sources */,
+				BF1313AE1FE936BE00D335F1 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

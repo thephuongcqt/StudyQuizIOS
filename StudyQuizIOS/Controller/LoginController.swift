@@ -105,22 +105,34 @@ class LoginController: UIViewController {
             let service = LoginService.shared
             let params = [paramUsername: username, paramPassword: password]
             
-            self.view.showHUD(with: "Loging in...")
+            view.showHUD(with: "Loging in...")
             service.login(with: params, completion: { (result) in
                 self.view.hideHUD()
                 switch result{
                 case .success(let response):
                     if let isSuccess = response.success, isSuccess == true , let user = response.value{
-                        print(user.username!)
+                        print(user.username ?? "nil")
+                        self.moveToHomeController()
                     } else if let err = response.error{
-                        print(err)
+                        self.showError(message: err)
                     }
                 case .failure(error: let err):
-                    print(err.localizedDescription)
+                    self.showError(message: err.localizedDescription)
                 }
             })
         }
-        
+    }
+    
+    func showError(message: String){
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func moveToHomeController(){
+        let homeController = HomeController()
+        let navController = UINavigationController(rootViewController: homeController)
+        present(navController, animated: true, completion: nil)
     }
 }
 
