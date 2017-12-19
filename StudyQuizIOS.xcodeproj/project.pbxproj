@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB6F2C65AC81BA93F82AE2A5 /* Pods_StudyQuizIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */; };
+		BF08712E1FE374D0009D0EA1 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = BF08712D1FE374D0009D0EA1 /* sample.json */; };
 		BF0881541FDEC483009B5054 /* SQTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881531FDEC483009B5054 /* SQTextField.swift */; };
 		BF0881571FDECCBE009B5054 /* SQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881561FDECCBE009B5054 /* SQButton.swift */; };
 		BF08815A1FDED557009B5054 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0881591FDED557009B5054 /* AppConst.swift */; };
@@ -25,10 +26,13 @@
 		BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */; };
 		BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E11FDE9371009D9726 /* Extensions.swift */; };
 		BFB511701FDEED6C00ED93E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5116F1FDEED6C00ED93E0 /* User.swift */; };
+		BFE3AF421FE8E36B00ADAE05 /* BaseDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3AF411FE8E36B00ADAE05 /* BaseDateTransform.swift */; };
+		BFE3AF441FE8EBC100ADAE05 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3AF431FE8EBC100ADAE05 /* ResultType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		337614DB5443C9FA152081F5 /* Pods-StudyQuizIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BF08712D1FE374D0009D0EA1 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		BF0881531FDEC483009B5054 /* SQTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQTextField.swift; sourceTree = "<group>"; };
 		BF0881561FDECCBE009B5054 /* SQButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQButton.swift; sourceTree = "<group>"; };
 		BF0881591FDED557009B5054 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		BF4EB3E11FDE9371009D9726 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BFB5116F1FDEED6C00ED93E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFE3AF411FE8E36B00ADAE05 /* BaseDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDateTransform.swift; sourceTree = "<group>"; };
+		BFE3AF431FE8EBC100ADAE05 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		E73A0EFDDB55727E18C8FF95 /* Pods-StudyQuizIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyQuizIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDC9A5105354D4E9440E9BD3 /* Pods_StudyQuizIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyQuizIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +92,7 @@
 			children = (
 				BF08815B1FDED5F9009B5054 /* BaseResponse.swift */,
 				BFB5116F1FDEED6C00ED93E0 /* User.swift */,
+				BFE3AF431FE8EBC100ADAE05 /* ResultType.swift */,
 			);
 			path = ApiModel;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 				BF4EB3DB1FDE9371009D9726 /* Utils */,
 				BF4EB3D61FDE92BE009D9726 /* View */,
 				BF0881591FDED557009B5054 /* AppConst.swift */,
+				BF08712D1FE374D0009D0EA1 /* sample.json */,
 			);
 			path = StudyQuizIOS;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0881581FDED532009B5054 /* ApiModel */,
+				BFE3AF411FE8E36B00ADAE05 /* BaseDateTransform.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4EB3CB1FDE914E009D9726 /* Assets.xcassets in Resources */,
+				BF08712E1FE374D0009D0EA1 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +282,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -308,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */,
+				BFE3AF421FE8E36B00ADAE05 /* BaseDateTransform.swift in Sources */,
 				BF0881571FDECCBE009B5054 /* SQButton.swift in Sources */,
 				BF4EB3DA1FDE9344009D9726 /* BaseService.swift in Sources */,
+				BFE3AF441FE8EBC100ADAE05 /* ResultType.swift in Sources */,
 				BF4EB3C31FDE914E009D9726 /* LoginController.swift in Sources */,
 				BFB511701FDEED6C00ED93E0 /* User.swift in Sources */,
 				BF0881541FDEC483009B5054 /* SQTextField.swift in Sources */,

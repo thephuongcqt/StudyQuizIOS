@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "value": {
+        "Feedbacks": [],
+        "MonthlyReports": [],
+        "StudiedQuestions": [],
+        "UserId": 1,
+        "Username": "phuongnt",
+        "Password": "",
+        "Email": "thephuongcqt@gmail.com",
+        "Name": "Nguyen The Phuong",
+        "Role": 0,
+        "CreatedDate": "2017-01-10T00:00:00"
+    },
+    "error": null
+}

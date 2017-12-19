@@ -103,7 +103,20 @@ class LoginController: UIViewController {
     @objc func handleLogin(){
         if let username = usernameTextField.text, let password = passwordTextField.text, username.isEmpty == false, password.isEmpty == false{
             let service = LoginService.shared
-            service.login(username: username, password: password)
+            let params = [paramUsername: username, paramPassword: password]
+            
+            service.login(with: params, completion: { (result) in
+                switch result{
+                case .success(let response):
+                    if let isSuccess = response.success, isSuccess == true , let user = response.value{
+                        print(user.username!)
+                    } else{
+                        print(response.error)
+                    }
+                case .failure(error: let err):
+                    print(err.localizedDescription)
+                }
+            })
         }
         
     }

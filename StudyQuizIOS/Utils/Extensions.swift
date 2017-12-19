@@ -72,3 +72,25 @@ extension UIColor{
     static let mainColor = UIColor(hex: "0x74ad14")
 }
 
+//extension Date
+//{
+//    init(dateString:String) {
+//        let dateStringFormatter = DateFormatter()
+//        dateStringFormatter.dateFormat = dateStringFormat
+//        dateStringFormatter.locale = Locale(identifier: "en_US_POSIX")
+//        let d = dateStringFormatter.date(from: dateString)!
+//        self.init(timeInterval:0, since:d)
+//    }
+//}
+
+
+extension Decodable {
+    init(_ any: Any) throws {
+        let data = try JSONSerialization.data(withJSONObject: any, options: .prettyPrinted)
+        let decoder = JSONDecoder()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateStringFormat
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        self = try decoder.decode(Self.self, from: data)
+    }
+}
