@@ -18,6 +18,14 @@ class BaseService{
         
     }
     
+    func getAbsoluteUrl(from url: String) -> URL?{
+        let urlString = baseUrl + url
+        if let absoluteUrl = URL(string: urlString){
+            return absoluteUrl
+        }
+        return nil
+    }
+    
     func getParams(with url: URL, completion: @escaping (_ dictionary: [String: Any]?, _ success: Bool, _ error: Error?) -> ()){
         Alamofire.request(url).responseJSON { (response) in
             if response.error != nil{
@@ -89,13 +97,6 @@ class BaseService{
                 completion(.failure(error: error))
             }
         }
-    }
-    
-    func getAbsoluteUrl(from url: String) -> URL?{
-        let urlString = baseUrl + url
-        if let absoluteUrl = URL(string: urlString){
-            return absoluteUrl
-        }
-        return nil
+//        completion(.failure(error: BaseError.connectionError))
     }
 }

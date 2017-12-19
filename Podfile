@@ -9,5 +9,6 @@ target 'StudyQuizIOS' do
 
 pod 'Alamofire', '~> 4.5'
 pod 'AlamofireObjectMapper', '~> 5.0'
+pod 'MBProgressHUD', '~> 1.1.0'
 
 end

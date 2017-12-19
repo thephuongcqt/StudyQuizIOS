@@ -105,13 +105,15 @@ class LoginController: UIViewController {
             let service = LoginService.shared
             let params = [paramUsername: username, paramPassword: password]
             
+            self.view.showHUD(with: "Loging in...")
             service.login(with: params, completion: { (result) in
+                self.view.hideHUD()
                 switch result{
                 case .success(let response):
                     if let isSuccess = response.success, isSuccess == true , let user = response.value{
                         print(user.username!)
-                    } else{
-                        print(response.error)
+                    } else if let err = response.error{
+                        print(err)
                     }
                 case .failure(error: let err):
                     print(err.localizedDescription)

@@ -25,6 +25,7 @@
 		BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */; };
 		BF4EB3E61FDE9371009D9726 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */; };
 		BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EB3E11FDE9371009D9726 /* Extensions.swift */; };
+		BF8CE41A1FE9011F001D1B39 /* Extensions+MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE4191FE9011F001D1B39 /* Extensions+MBProgressHUD.swift */; };
 		BFB511701FDEED6C00ED93E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5116F1FDEED6C00ED93E0 /* User.swift */; };
 		BFE3AF421FE8E36B00ADAE05 /* BaseDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3AF411FE8E36B00ADAE05 /* BaseDateTransform.swift */; };
 		BFE3AF441FE8EBC100ADAE05 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3AF431FE8EBC100ADAE05 /* ResultType.swift */; };
@@ -51,6 +52,7 @@
 		BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		BF4EB3E11FDE9371009D9726 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BF8CE4191FE9011F001D1B39 /* Extensions+MBProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+MBProgressHUD.swift"; sourceTree = "<group>"; };
 		BFB5116F1FDEED6C00ED93E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BFE3AF411FE8E36B00ADAE05 /* BaseDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDateTransform.swift; sourceTree = "<group>"; };
 		BFE3AF431FE8EBC100ADAE05 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				BF4EB3DF1FDE9371009D9726 /* Extensions+UIView.swift */,
 				BF4EB3E01FDE9371009D9726 /* Extensions+UIViewController.swift */,
 				BF4EB3E11FDE9371009D9726 /* Extensions.swift */,
+				BF8CE4191FE9011F001D1B39 /* Extensions+MBProgressHUD.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -283,12 +286,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-StudyQuizIOS/Pods-StudyQuizIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +340,7 @@
 				BF4EB3E71FDE9371009D9726 /* Extensions.swift in Sources */,
 				BF08815A1FDED557009B5054 /* AppConst.swift in Sources */,
 				BF4EB3C91FDE914E009D9726 /* StudyQuizIOS.xcdatamodeld in Sources */,
+				BF8CE41A1FE9011F001D1B39 /* Extensions+MBProgressHUD.swift in Sources */,
 				BF4EB3E21FDE9371009D9726 /* BaseJsonObject.swift in Sources */,
 				BF08815C1FDED5F9009B5054 /* BaseResponse.swift in Sources */,
 				BF4EB3E51FDE9371009D9726 /* Extensions+UIView.swift in Sources */,

@@ -9,10 +9,9 @@
 import Foundation
 
 let baseUrl = "http://studyquiz.azurewebsites.net/api/"
+let loginUrl = "User/PostLogin"
 
 let paramUsername = "Username"
 let paramPassword = "Password"
 let dateStringFormat = "yyyy-MM-dd'T'HH:mm:ss"
 let errorNetworking = "Network error, please try again"
-
-let loginUrl = "User/PostLogin"
